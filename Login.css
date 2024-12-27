@@ -1,0 +1,86 @@
+/* Reset dasar untuk memastikan tampilan konsisten */
+body, h1, p, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk seluruh body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1b5e20, #33691e); /* Gradasi hijau elegan */
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+    
+}
+
+/* Gaya untuk form login */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Gaya untuk judul halaman */
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk label */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Gaya untuk input fields */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Gaya untuk tombol submit */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk tautan di bagian bawah form */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

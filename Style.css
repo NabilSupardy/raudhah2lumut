@@ -1,0 +1,176 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1b5e20, #33691e); /* Gradasi hijau elegan */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #004d40, #00695c); /* Gradasi hijau tosca */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #f1c40f; /* Warna emas */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #f1c40f;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.navbar img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logout Button */
+.logout-btn {
+    background: linear-gradient(145deg, #c0392b, #e74c3c); /* Gradasi merah */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #a93226;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Konten */
+.content {
+    margin-top: 120px;
+    padding: 30px;
+    text-align: center;
+    width: 85%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1); /* Transparan */
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Judul */
+.content h1 {
+    font-size: 32px;
+    color: #f1c40f; /* Warna emas */
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Paragraf */
+.content p {
+    font-size: 18px;
+    color: #eee;
+    line-height: 1.8;
+}
+
+/* Efek 3D pada Navbar dan Tombol */
+.navbar, .logout-btn {
+    transform: perspective(400px) translateZ(0px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover, .logout-btn:hover {
+    transform: perspective(400px) translateZ(10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Link Kembali */
+a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .logout-btn {
+        padding: 8px 16px;
+    }
+}

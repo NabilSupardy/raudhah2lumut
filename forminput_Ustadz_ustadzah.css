@@ -1,0 +1,106 @@
+/* Reset dasar untuk elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1b5e20, #33691e); /* Gradasi hijau elegan */
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a; /* Biru gelap */
+    color: #f39c12;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 32px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Form */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+form input[type="text"], form input[type="date"], form input[type="radio"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #1e3a8a;
+    color: #f39c12;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #3b5998; /* Biru lebih terang */
+}
+
+/* Responsivitas */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input[type="text"], form input[type="date"], form input[type="radio"] {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,100 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1b5e20, #33691e); /* Gradasi hijau elegan */
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container utama */
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Transparan dengan efek blur */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Gaya judul utama */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffd700; /* Warna emas */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Gaya heading sub judul */
+h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+/* Paragraf */
+p {
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+/* Daftar */
+ul {
+    margin: 10px 0 20px 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Teks tebal */
+strong {
+    color: #ffd700;
+}
+
+/* Link */
+a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Responsivitas */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

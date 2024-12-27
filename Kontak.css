@@ -1,0 +1,128 @@
+/* Reset dasar untuk elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1b5e20, #33691e); /* Gradasi hijau elegan */
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+/* Kontainer Kontak */
+.contact-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1 {
+    font-size: 48px;
+    color: #f39c12; /* Emas cerah */
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ecf0f1;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Bagian Kontak */
+.contact-item {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #f39c12; /* Emas cerah */
+}
+
+.contact-item strong {
+    color: #f39c12;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(360deg); /* Efek rotasi pada logo */
+}
+
+/* Map Iframe */
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsivitas */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        font-size: 16px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .contact-item {
+        font-size: 16px;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    iframe {
+        max-width: 100%;
+        height: 300px;
+    }
+}
